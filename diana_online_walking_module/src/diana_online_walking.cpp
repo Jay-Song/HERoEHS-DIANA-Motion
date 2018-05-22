@@ -103,6 +103,7 @@ void DIANAOnlineWalking::process()
   mat_g_to_rfoot_ = walking_pattern_.mat_g_to_rfoot_;
   mat_g_to_lfoot_ = walking_pattern_.mat_g_to_lfoot_;
   mat_robot_to_pelvis_ = walking_pattern_.mat_robot_to_pelvis_;
+
   mat_robot_to_rfoot_ = (mat_robot_to_pelvis_*mat_pelvis_to_g_)*mat_g_to_rfoot_;
   mat_robot_to_lfoot_ = (mat_robot_to_pelvis_*mat_pelvis_to_g_)*mat_g_to_lfoot_;
 
