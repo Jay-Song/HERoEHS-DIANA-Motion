@@ -24,7 +24,20 @@
   <build_depend>diana_kinematics_dynamics</build_depend>
   <build_depend>diana_online_walking_module</build_depend>
   <build_depend>diana_base_module</build_depend>
+  
   <run_depend>roscpp</run_depend>
+  <run_depend>dynamixel_sdk</run_depend>
+  <run_depend>robotis_framework_common</run_depend>
+  <run_depend>robotis_device</run_depend>
   <run_depend>robotis_controller</run_depend>
+  <run_depend>robotis_controller_msgs</run_depend>
+  <run_depend>cmake_modules</run_depend>
+  <run_depend>robotis_math</run_depend>
+  <run_depend>heroehs_math</run_depend>
+  <run_depend>heroehs_online_walking_pattern_generator</run_depend>
+  <run_depend>heroehs_pd_balance_controller</run_depend>
+  <run_depend>diana_kinematics_dynamics</run_depend>
   <run_depend>diana_online_walking_module</run_depend>
+  <run_depend>diana_base_module</run_depend>
+  
 </package>

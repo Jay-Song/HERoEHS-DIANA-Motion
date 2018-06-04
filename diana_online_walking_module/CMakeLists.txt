@@ -13,15 +13,12 @@ find_package(catkin REQUIRED COMPONENTS
   sensor_msgs
   geometry_msgs
   cmake_modules
-  robotis_math
   robotis_framework_common
   robotis_controller_msgs
-  heroehs_math
   heroehs_online_walking_pattern_generator
   heroehs_pd_balance_controller
   diana_kinematics_dynamics
   diana_online_walking_module_msgs
-  diana_msgs
 )
 
 find_package(Eigen REQUIRED)
@@ -40,7 +37,7 @@ find_package(Eigen REQUIRED)
 catkin_package(
   INCLUDE_DIRS include
   LIBRARIES diana_online_walking_module
-  CATKIN_DEPENDS roscpp robotis_math robotis_framework_common heroehs_math heroehs_online_walking_pattern_generator heroehs_pd_balance_controller diana_kinematics_dynamics
+  CATKIN_DEPENDS roscpp heroehs_online_walking_pattern_generator heroehs_pd_balance_controller diana_kinematics_dynamics
 )
 
 ################################################################################
@@ -48,8 +45,8 @@ catkin_package(
 ################################################################################
 include_directories(
   include
-  ${catkin_INCLUDE_DIRS}
   ${Eigen_INCLUDE_DIRS}
+  ${catkin_INCLUDE_DIRS}
 )
 
 add_library(diana_online_walking_module
